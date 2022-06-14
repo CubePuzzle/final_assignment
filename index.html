@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+</head>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+
+/* navbar */
+
+
+.navbar{
+    height: 60px;
+    padding-left: 130px;
+    padding-right: 130px;
+}
+
+.navbar .logo{
+    line-height: 60px;
+    float: left;
+}
+
+.navbar .logo img{
+    height: 40px;
+    vertical-align: middle;
+}
+
+.navbar .menu{
+    float: middle;
+}
+
+.navbar .menu li{
+    float: left;
+    list-style: none;
+    margin-left: 10px;
+    padding-left: 10px;
+}
+
+.navbar .menu li a{
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 60px;
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding-left: 20px;
+}
+
+.navbar .login{
+    float: right;
+}
+
+.navbar .login li{
+    float: left;
+    list-style: none;
+    margin-left: 10px;
+}
+
+.navbar .login li a{
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 60px;
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+/* hero-header */
+
+.hero-header{
+    background-image: url(https://i.postimg.cc/T1yWGP69/queens-main-img-1.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 600px;
+}
+
+.hero-header .info{
+    color: white;
+    height: 600px;
+    padding-top: 200px;
+    margin-left: 160px;
+}
+
+.hero-header .info h1{
+    font-size: 30px;
+    line-height: 70px;
+}
+
+.hero-header .info h2{
+    font-size: 20px;
+    font-weight: 100;
+    margin-bottom: 60px;
+}
+
+.hero-header .info a{
+    padding: 10px 40px;
+    border: 1px solid white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 100;
+    color: white;
+}
+
+.hero-header .info a:hover{
+    background-color: white;
+    color: black;
+}
+
+
+
+/* box1(이벤트) */
+
+.box1{
+    margin-left: 130px;
+    margin-right: 130px;
+    margin-top: 120px;
+    text-align: center;
+
+}
+
+.box1 h1{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.event-box{
+    display: inline-block;
+    border: 1px solid #484848;
+    width: 380px;
+    height: 500px;
+    margin-top: 62px;
+
+}
+
+.event-box .event-img{
+    width: 378px;
+    height: 300px;
+    display: inline-block;
+}
+
+.event-box h3{
+    font-size: 20px;
+    font-weight: 700;
+    padding-top: 24px;
+    padding-left: 14px;
+}
+
+.event-info{
+    font-size: 16px;
+    font-weight: 100;
+    padding-top: 24px;
+    padding-left: 14px;
+    padding-right: 14px;
+
+}
+
+.view-more{
+    display: block;
+    padding: 10px 40px;
+    border: 1px solid #484848;
+    color: #484848;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 100;
+    width: 200px;
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.view-more a{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.box2{
+    background-color: #101010;
+    margin-top: 120px;
+
+}
+
+.box2 h1{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    padding-top: 80px;
+}
+
+.box2 .special-menu .menu-img{
+    margin-top: 60px;
+    margin-left: 240px;
+    display: inline-block;
+}
+
+.box2 .special-menu h2{
+    display: inline-block;
+    color: #f5f5f5;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 60px;
+    margin-left: 100px;
+}
+
+.box2 .special-menu .menu-info{
+    display: inline-block;
+    color: #d9d9d9;
+    font-size: 16px;
+    font-weight: 300;
+    width: 580px;
+    margin-left: 828px;
+    margin-bottom: 120px;
+}
+
+.delivery{
+    background-image: url(https://i.postimg.cc/FRRjftqn/ashley-delivery-img.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 886px;
+    text-align: center;
+}
+
+.delivery h1{
+    font-size: 60px;
+    color: white;
+    text-align: center;
+    padding-top: 60px;
+}
+
+.delivery h2{
+    font-size: 30px;
+    font-weight: 100;
+    color: white;
+    text-align: center;
+}
+
+.deli-menu{
+    display: inline-block;
+    margin-top: 62px;
+    margin-left: 10px
+
+}
+
+.deli-menu h4{
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 20px;
+    margin-bottom: 8px;
+}
+
+.deli-menu .deli-info{
+    color: white;
+    font-size: 14px;
+    font-weight: 100;
+    margin-bottom: 60px;
+}
+
+.view-more2{
+    border: 1px solid white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 100;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+    width: 180px;
+    height: 50px;
+    padding-top: 10px;
+    display: block;
+}
+
+.view-more2:hover{
+    background-color: white;
+    color: black;
+}
+
+.footer{
+    background-color: #000000;
+    height: 200px;
+    color: #f5f5f5;
+    font-size: 12px;
+    line-height: 160%;
+}
+
+.footer-info h5{
+    float: left;
+    margin-top: 30px;
+    margin-left: 130px;
+}
+
+.footer-info h6{
+    float: left;
+    margin-top: 60px;
+    width: 638px;
+    font-weight: 100;
+}
+
+.sns{
+    float: right;
+    margin-right: 130px;
+    line-height: 30px;
+    margin-top: 30px;
+}
+
+
+</style>
+
+<body>
+
+<div class="navbar">
+    <a href="index.html" class="logo">
+        <img src="https://i.postimg.cc/nzHpJSvc/ashley-logo.png" alt="logo">
+    </a>
+    <ul class="menu">
+        <li><a href="#">STORE</a></li>
+        <li><a href="menu.html">MENU</a></li>
+        <li><a href="#">DELIVERY</a></li>
+        <li><a href="#">RESERVATION</a></li>
+        <li><a href="event.html">EVENT</a></li>
+        <li><a href="#">CONTACT</a></li>
+    </ul>
+    <ul class="login">
+        <li><a href="#">로그인</a></li>
+        <li><a href="#">회원가입</a></li>
+    </ul>
+</div>
+
+
+<div class="hero-header">
+    <div class="info">
+        <h1><b>ASHLEY</b>에 방문해 주셔서 감사합니다.</h1>
+        <h2>고객님을 성심껏 모시겠습니다.</h2>
+        <a href="#">가까운 매장 찾기</a>
+</div>
+
+
+<div class="box1">
+<h1>NOW EVENT</h1>
+    <div class="event-box">
+        <img class="event-img" src="https://i.postimg.cc/GpJmRKRm/image-7.png">
+        <h3>애슐리 생맥주 무제한! 무료!</h3>
+        <p class="event-info">6.17~6.23 맥주 판매 매장 한정 (W,W+54개점) 무제한 맥주 제공 매장은 공식 홈페이지에서 확인하세요!</p>
+    </div>
+
+    <div class="event-box">
+        <img class="event-img" src="https://i.postimg.cc/V6g9JXqY/event2.png">
+        <h3>킨더부에노X애슐리 퀸즈</h3>
+        <p class="event-info">딱 7일만, 킨더 부에노로 더 풍성해진 애슐리 와플 및 퐁듀를 즐겨보세요!</p>
+    </div>
+
+    <div class="event-box">
+        <img class="event-img" src="https://i.postimg.cc/Y0jFjZ23/event3.png">
+        <h3>내맘대로 치킨파티</h3>
+        <p class="event-info">오늘도 내일도 내맘대로 치킨파티! 애슐리 퀸즈에서 지금 만나보세요.</p>
+    </div>
+
+    <a href="#" class="view-more">View More</a>
+
+</div>
+
+<div class="box2">
+<h1>SPECIAL MENU</h1>
+
+    <div class="special-menu">
+        <img class="menu-img" src="https://i.postimg.cc/sfmYJFMw/special-menu-1.png">
+        <h2>내맘대로 통살치킨</h2>
+        <p class="menu-info">애슐리의 대표 메뉴로 가장 유명한 메뉴 중 하나인 통살치킨입니다. 뼈 없이 순살으로 제공되어 먹기에 편하고, 함께 제공되는 소이 소스나 와사비마요 소스 등에 찍어드시면 더욱 맛있게 즐기실 수 있습니다.</p>
+    </div>
+
+    <div class="special-menu">
+        <img class="menu-img" src="https://i.postimg.cc/tgD6NWT7/special-menu-2.png">
+        <h2>핫 테킬라 치킨랩 앤 윙</h2>
+        <p class="menu-info">시즌 메뉴 중 하나인 핫 테킬라 치킨랩 앤 윙입니다. 스파이시한 윙으로 한국인을 겨냥한 맛입니다. 남녀노소 누구나 편히 즐길 수 있도록 로컬라이징하여 스탠다드한 맛으로 대중의 입맛을 사로잡고자 합니다.</p>
+    </div>
+
+    <div class="special-menu">
+        <img class="menu-img" src="https://i.postimg.cc/FzbGm1pS/special-menu-3.png">
+        <h2>베이크드 허브 치킨 스테이크</h2>
+        <p class="menu-info">시즌 메뉴 중 하나인 베이크드 허브 치킨 스테이크입니다. 허브로 향을 살리고 구워 향긋하고, 허벅지살만을 사용해 육질이 부드러운 치킨입니다.</p>
+    </div>
+
+    <div class="special-menu">
+        <img class="menu-img" src="https://i.postimg.cc/KYXNKnWT/special-menu-4.png">
+        <h2>치폴레 닭똥집</h2>
+        <p class="menu-info">치포틀레 또는 치폴레는 훈제된 고추를 뜻하는 나우아틀어 낱말 chilpoctli에서 비롯된 것으로, 훈제·건조된 할라페뇨이다. 멕시코식 미국 요리, 텍스멕스, 미국 남서부 요리와 같이 멕시코 및 멕시코의 영향을 받은 요리에 주로 사용되는 고추입니다. 이를 사용한 닭똥집으로 매콤하게 즐기실 수 있습니다.</p>
+    </div>
+
+</div>
+
+<div class="delivery">
+    <h1>ASHLEY DELIVERY</h1>
+    <h2>집에서 즐기는 애슐리 홈뷔페</h2>
+
+    <div class="deli-menu">
+        <img class="deli-img" src="https://i.postimg.cc/tCWdK1JC/delivery-img-1.png">
+        <h4>시그니처 파스타 세트</h4>
+        <p class="deli-info">15,900원</p>
+    </div>
+
+    <div class="deli-menu">
+        <img class="deli-img" src="https://i.postimg.cc/cJqpstM9/delivery-img-2.png">
+        <h4>시그니처 커플 세트</h4>
+        <p class="deli-info">25,900원</p>
+    </div>
+
+    <div class="deli-menu">
+        <img class="deli-img" src="https://i.postimg.cc/vmdKRFbC/delivery-img-3.png">
+        <h4>시그니처 그릴 세트</h4>
+        <p class="deli-info">28,900원</p>
+    </div>
+
+    <div class="deli-menu">
+        <img class="deli-img" src="https://i.postimg.cc/Fz1WbhVk/delivery-img-4.png">
+        <h4>홈뷔페 패밀리 세트</h4>
+        <p class="deli-info">33,900원</p>
+    </div>
+
+    <a href="#" class="view-more2">View More</a>
+
+</div>
+
+<div class="footer">
+    <div class="footer-info">
+        <h5>ASHLEY</h5>
+        <h6>(주) 이랜드이츠 | 서울특별시 금천구 가산디지털1로 186, 213호(가산동) 제이플라츠
+            대표이사 : 황성윤 | 개인정보보호 책임자 : 황성윤 | E POINT 멤버쉽 관련 문의 : 1833-6439
+            매장 이용관련 문의 및 불편사항 : 1577-1259 | 이메일 : elandfood@eland.co.kr | 호스팅 서비스 제공자 : 라드씨엔에스
+            개인정보처리방침 | 영상정보처리기기운영·관리방침 | 서비스 이용약관
+            Copyright©2013 ASHLEY</h6>
+    </div>
+
+    <div class="sns">
+        <a href="https://ko-kr.facebook.com/wowAshley/" target="_blank">
+            <img src="https://i.postimg.cc/5yFGdxQd/sns-logo-1.png"></a>
+
+        <a href="https://www.instagram.com/your_ashley/" target="_blank">
+            <img src="https://i.postimg.cc/vBRM4S7s/sns-logo-2.png"></a>
+    </div>
+
+</div>
+    
+</body>
+</html>
