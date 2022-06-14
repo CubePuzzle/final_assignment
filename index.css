@@ -183,6 +183,11 @@
 
 }
 
+.view-more:hover{
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
 .box2{
     background-color: #101010;
     margin-top: 120px;
